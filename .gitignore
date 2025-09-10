@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# --- Configuración / secretos ---
+.env
+.env.* 
+!.env.example   # permite tener un archivo de ejemplo sin credenciales reales
+
+# --- FastAPI / Uvicorn ---
+*.log
+*.pid
+
+# --- Base de datos ---
+*.db
+*.sqlite
+*.sqlite3
+migrations/       # si usas Alembic para migraciones (ignóralo si querés versionarlas)
+
+# --- Jupyter / Notebooks (por si usas) ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- IDEs / Editores ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Otros ---
+.DS_Store
+Thumbs.db
