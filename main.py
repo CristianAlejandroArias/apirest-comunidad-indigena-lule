@@ -1,13 +1,9 @@
-from typing import Union
 from fastapi import FastAPI
+from app.controllers import parajes_router
+from app.repositories.database import Base,engine
 
 app = FastAPI()
-@app.get("/")
-def read_roo():
-    return {"Hello": "World"}
+Base.metadata.create_all(bind=engine)
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, 
-            "q":q
-            }
+app.include_router(router=parajes_router, prefix=f"/api/v1")
+

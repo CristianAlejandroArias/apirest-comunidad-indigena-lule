@@ -1,0 +1,1 @@
+from app.repositories.parajes_repository import ParajesRepository
