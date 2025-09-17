@@ -18,11 +18,12 @@ class MembersRepository:
             dni = member.dni,
             name = member.name,
             last_name = member.last_name,
-            adreess = member.address,
+            address = member.address,
             phone = member.phone,
             email = member.email,
             birth_date = member.birth_date,
-            paraje_id = member.paraje_id
+            paraje_id = member.paraje_id,
+            join_date = member.join_date
             #join_date = member.join_date (esto se asigna automaticamente con default=func.current_date
         )
         db.add(new_member)

@@ -18,5 +18,5 @@ class ParajeModel(Base):
     # - String → tipo de dato texto
     # - index=True → también se puede buscar más rápido por "name"
 
-    relationships = relationship("MemberModel", back_populates="paraje")
+    members = relationship("MemberModel", back_populates="paraje")
 

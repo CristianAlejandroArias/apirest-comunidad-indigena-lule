@@ -10,8 +10,9 @@ class Member(BaseModel):
     phone: str
     email: str
     birth_date: date 
-    join_date: Optional[date] = None
     paraje_id: int
+    join_date: Optional[date] = None
+    # join_date es opcional porque se asigna automaticamente con default=func.current_date al crear el miembro
 
 
 

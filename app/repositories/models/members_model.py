@@ -17,6 +17,6 @@ class MemberModel(Base):
     join_date = Column(Date, default=func.current_date, index=True)
     
     paraje_id = Column(Integer, ForeignKey("parajes.id"))
-    paraje = relationship("ParajeModel", back_populates="members1")
+    paraje = relationship("ParajeModel", back_populates="members")
     # Esto crea una relación entre MemberModel y ParajeModel, permitiendo acceder al paraje asociado a un miembro
     #back_populates se usa para definir la relación bidireccional entre las dos tablas    
