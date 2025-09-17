@@ -1,7 +1,7 @@
 # Importamos lo necesario de SQLAlchemy
 from sqlalchemy import Column, Integer, String        # Columnas y tipos de datos
 from app.repositories.database import Base            # Nuestra clase Base para modelos (creada en database.py)
-
+from sqlalchemy.orm import relationship
 
 # Definimos un modelo llamado "ParajeModel"
 class ParajeModel(Base):
@@ -18,4 +18,5 @@ class ParajeModel(Base):
     # - String → tipo de dato texto
     # - index=True → también se puede buscar más rápido por "name"
 
+    relationships = relationship("MemberModel", back_populates="paraje")
 
