@@ -1,3 +1,4 @@
 from app.repositories.parajes_repository import ParajesRepository
 from app.repositories.members_respository import MembersRepository
 from app.repositories.positions_repository import PositionsRepository
+from app.repositories.periods_repository import PeriodsRepository
