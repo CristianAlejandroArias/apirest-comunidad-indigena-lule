@@ -1,5 +1,4 @@
 from sqlalchemy.orm import Session
-#from app.repositories import MembersRepository
 from app.repositories import MembersRepository
 from app.repositories.models.members_model import MemberModel
 
