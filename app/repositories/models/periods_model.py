@@ -9,3 +9,8 @@ class PeriodModel(Base):
     start_period = Column(Date, index=True)
     end_period = Column(Date, index=True)
 
+    commissions = relationship("CommissionModel", back_populates="period")
+    # Esto crea una relación entre PeriodModel y CommissionModel, permitiendo acceder a las comisiones asociadas a un período
+    #back_populates se usa para definir la relación bidireccional entre las dos tablas
+
+    
