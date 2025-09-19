@@ -1,4 +1,4 @@
-from fastapi import HttpException
+from fastapi import HTTPException
 from sqlalchemy.orm import Session
 from app.repositories.models.commissions_model import CommissionModel
 
