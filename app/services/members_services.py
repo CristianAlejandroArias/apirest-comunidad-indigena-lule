@@ -20,3 +20,4 @@ class MembersService:
     
     def delete_member(self, db: Session, member_id: int):
         return self.repository.delete_member(db,member_id)
+    

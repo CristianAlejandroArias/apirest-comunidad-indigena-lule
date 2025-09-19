@@ -20,3 +20,4 @@ class ParajeModel(Base):
 
     members = relationship("MemberModel", back_populates="paraje")
 
+    
