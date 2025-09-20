@@ -56,4 +56,7 @@ class MembersRepository:
             db.commit()
         return db_member
     
+    def get_member_by_email(self, db: Session, email: str):
+        return db.query(MemberModel).filter(MemberModel.email == email).first()
+    
     
